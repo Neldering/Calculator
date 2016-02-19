@@ -13,8 +13,10 @@ public class BMIcalculatorNCE
 		double height, weight, BMI;
 		Scanner kb = new Scanner(System.in);
 		
+		// output: display instructions
 		System.out.println("In this program I will calculate your BMI.");
-		System.out.println("Then I will determine your weight category.");
+		System.out.println("Then I will determine your weight category.\n");
+		
 		
 		// output: display instruction | Input: height 
 		System.out.print("Please enter your height in inches. > ");
@@ -30,7 +32,7 @@ public class BMIcalculatorNCE
 		BMI = (weight*703)/(Math.pow(height, 2));
 		
 		//optimal weight 18.5 - 25
-		if ( 18.5 <= BMI <= 25)
+		if ( 18.5 <= BMI && BMI <= 25.0)
 			System.out.println("Your BMI is: " + BMI + " Which is an Optimal Weight.");
 		
 		//underweight <18.5
